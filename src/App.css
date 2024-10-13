@@ -1,0 +1,113 @@
+:root {
+  --background-color-light: white;
+  --text-color-light: black;
+  --background-color-dark: rgb(63, 63, 63);
+  --text-color-dark: white;
+  --main-color: rgb(49, 91, 188);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+} */
+
+/* css for project_details.js */
+body.dark-mode .modal_div {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* css for navigation.js */
+body.dark-mode .navigation,
+body.dark-mode .language-toggle,
+body.dark-mode .language-option {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* css for about.js */
+body.dark-mode .floating-container {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark-mode .social_item_div .social_icon {
+  color: var(--text-color-dark);
+}
+
+/* contact */
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  color: var(--text-color-dark);
+}
+
+/* css for background.js */
+.animation_bubbles {
+  background-color: var(--background-color-light);
+}
+
+body.dark-mode .animation_bubbles {
+  background-color: var(--background-color-dark);
+}
+
+.background-container_bubbles {
+  background: linear-gradient(180deg, rgb(135, 185, 251), var(--main-color));
+}
+
+body.dark-mode .background-container_bubbles {
+  background: linear-gradient(180deg, var(--main-color), rgb(78, 111, 116));
+}
+
+/* css for App.js */
+.app_container {
+  background-color: rgba(231, 231, 231, 0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.route_container {
+  overflow: hidden;
+  display: flex;
+  height: 80%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools_div {
+  width: 50vw;
+}
+
+@media all and (max-width: 1050px) {
+  .app_container {
+    height: auto;
+    /* change later to 100vh */
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .tools_div {
+    width: 75vw;
+  }
+
+  .route_container .small-screen {
+    flex-direction: row;
+  }
+
+  .route_container {
+    width: 92%;
+    overflow: visible;
+    flex-direction: column;
+  }
+}
