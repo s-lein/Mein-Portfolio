@@ -21,8 +21,7 @@ const Work = ({ id, isWidthGreaterThan1050, language }) => {
     const [activeItem, setActiveItem] = useState(null);
 
     // project pictures imports from public folder
-    const Gamma = `${process.env.PUBLIC_URL}/img/Gamma.jpg`;
-    const Gamma_phone = `${process.env.PUBLIC_URL}/img/Gamma_phone.jpg`;
+    const de_Chi_Quadrat_Verteilung = `${process.env.PUBLIC_URL}/img/de_Chi-Quadrat-Verteilung.svg`;
 
     const PCA = `${process.env.PUBLIC_URL}/img/PCA.png`;
     const PairPlot = `${process.env.PUBLIC_URL}/img/PairPlot.ppg`;
@@ -34,18 +33,31 @@ const Work = ({ id, isWidthGreaterThan1050, language }) => {
     
     const workItems = [
         {
-            imgSrc: Gamma,
-            title: Texts[language].work.projects.gamma.title,
-            description: Texts[language].work.projects.gamma.description,
+            imgSrc: de_Chi_Quadrat_Verteilung,
+            title: Texts[language].work.projects.chi.title,
+            description: Texts[language].work.projects.chi.description,
+            features: Texts[language].work.projects.chi.features,
             linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
+            languagesUsed: ['Python', 'Jest', 'Cucumber', 'Puppeteer', 'HTML', 'Sass', 'React', 'Google Calendar API', 'OAuth2', 'Recharts'],
+            //phonePic: [meet_phone, meet]
+            //languagesUsed: [Python, Jupyter],
+            phonePic: [de_Chi_Quadrat_Verteilung]
 
-            languagesUsed: [Python, Jupyter],
-            phonePic: [Gamma]
+
+            //imgSrc: meet,
+            //title: Texts[language].work.projects.meet.title,
+            //description: Texts[language].work.projects.meet.description,
+            
+            //linkGit: 'https://github.com/alinalein/meet',
+            //linkLive: 'https://alinalein.github.io/meet/',
+            // languagesUsed: [Reacticon, Jest, AWS, Cucumber],
+           
         },
         {
             imgSrc: PCA,
             title: Texts[language].work.projects.pca.title,
             description: Texts[language].work.projects.pca.description,
+            features: Texts[language].work.projects.pca.features,
             linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
             languagesUsed: [Python, Jupyter],
             phonePic: [Korrelationsmatrix_der_Merkmale, PCA]
@@ -54,6 +66,7 @@ const Work = ({ id, isWidthGreaterThan1050, language }) => {
             imgSrc: Clustering,
             title: Texts[language].work.projects.cluster.title,
             description: Texts[language].work.projects.cluster.description,
+            features: Texts[language].work.projects.cluster.features,
             linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
             languagesUsed: [Python, Jupyter],
             phonePic: [Clustering]
@@ -62,6 +75,7 @@ const Work = ({ id, isWidthGreaterThan1050, language }) => {
             imgSrc: VergeleichAktienvorhersage,
             title: Texts[language].work.projects.aktien.title,
             description: Texts[language].work.projects.aktien.description,
+            features: Texts[language].work.projects.aktien.features,
             linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
             languagesUsed: [Python, Jupyter],
             phonePic: [VergeleichAktienvorhersage]
@@ -99,13 +113,16 @@ const Work = ({ id, isWidthGreaterThan1050, language }) => {
                         </div>
                     ))}
                 </div>
+
+                <div className="scrollable_images_container">
+                    
                 {activeItem &&
                     <ProjectDetails onClose={onClose} language={language}
-                        title={activeItem.title} description={activeItem.description}
+                        title={activeItem.title} description={activeItem.description} features={activeItem.features}
                         languagesUsed={activeItem.languagesUsed} linkGit={activeItem.linkGit}
                         phonePic={activeItem.phonePic} />
                 }
-            </div>
+            </div></div>
         </motion.div >
     );
 }

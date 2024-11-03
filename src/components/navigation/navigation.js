@@ -11,6 +11,10 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Texts from '../utils/texts.js';
+import ImpressumDE from '../../assets/pdf/Impressum_De.pdf'
+import ImpressumEN from '../../assets/pdf/Impressum_En.pdf'
+// import { col } from 'framer-motion/client';
+// import { color } from 'framer-motion';
 
 const Navigation = ({ components, isWidthGreaterThan1050, setActiveComponent, activeComponent, language, setLanguage }) => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -156,8 +160,23 @@ const Navigation = ({ components, isWidthGreaterThan1050, setActiveComponent, ac
                     {item.label}
                 </div>
             ))}
-        </nav>
+
+            {isWidthGreaterThan1050 ?
+                <a
+                    href={language === 'en' ? ImpressumEN : ImpressumDE}
+                    style={{ color: 'var(--main-color)' }}
+                    rel='noopener noreferrer'
+                    target='_blank'
+                >
+                    Impressum
+                </a>
+                : ''
+            }
+
+        </nav> 
     );
 }
+
+
 
 export default Navigation;

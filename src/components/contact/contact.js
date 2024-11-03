@@ -8,6 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Notification from '../utils/notification';
 import variantsBig from '../utils/variantsAnimation'
 import Texts from '../utils/texts.js';
+import ImpressumDE from '../../assets/pdf/Impressum_De.pdf'
+import ImpressumEN from '../../assets/pdf/Impressum_En.pdf'
 import './contact.scss'
 
 const Contact = ({ id, isWidthGreaterThan1050, language }) => {
@@ -57,6 +59,15 @@ const Contact = ({ id, isWidthGreaterThan1050, language }) => {
                         {Texts[language].contact.formTitle.slice(1)}
                     </h2>
                 </div>
+                <div>
+                    <p className='remove_p-margin'>
+                        {Texts[language].contact.formMessage}
+                        <a href="mailto:s-leinweber@web.de" style={{ color: "var(--main-color)", textDecoration: "none" }}>
+                            s-leinweber@web.de
+                        </a>.
+                    </p>
+                </div>
+ 
                 <div className="contact-form">
                     <form ref={form} onSubmit={sendMessage}>
                         <div className="input-row">
@@ -90,6 +101,19 @@ const Contact = ({ id, isWidthGreaterThan1050, language }) => {
                         <LeetcodeIcon className='social_icon' />
                     </a>
                 </div>
+
+                {isWidthGreaterThan1050 ?
+                    '' :
+                    <a
+                        href={language === 'en' ? ImpressumEN : ImpressumDE}
+                        style={{ color: 'var(--main-color)' }}
+                        rel='noopener noreferrer'
+                        target='_blank'
+                    >
+                        Impressum
+                    </a>
+                }
+
             </div>
 
         </motion.div>
