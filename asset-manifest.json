@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/Mein-Portfolio/static/css/main.e3056b96.css",
-    "main.js": "/Mein-Portfolio/static/js/main.464e74f8.js",
+    "main.css": "/Mein-Portfolio/static/css/main.9e39fd4d.css",
+    "main.js": "/Mein-Portfolio/static/js/main.d069d8d4.js",
     "static/js/453.17df7fe8.chunk.js": "/Mein-Portfolio/static/js/453.17df7fe8.chunk.js",
     "static/media/CV_de.pdf": "/Mein-Portfolio/static/media/CV_de.91609b25a80a81912c00.pdf",
     "static/media/CV_en.pdf": "/Mein-Portfolio/static/media/CV_en.d55284045b88f38ab5cc.pdf",
     "static/media/SVN.svg": "/Mein-Portfolio/static/media/SVN.bf08427ea2aec969cb8ac061043d9d72.svg",
+    "static/media/Impressum_De.pdf": "/Mein-Portfolio/static/media/Impressum_De.5b819f53eb782d29fe24.pdf",
+    "static/media/Impressum_En.pdf": "/Mein-Portfolio/static/media/Impressum_En.75dacf4e5d7a4eb9a9f6.pdf",
     "service-worker.js": "/Mein-Portfolio/service-worker.js",
     "static/media/Jupyter.svg": "/Mein-Portfolio/static/media/Jupyter.78e712bcd4cd70aafdfb7b458b1f1bbc.svg",
     "static/media/Azure.svg": "/Mein-Portfolio/static/media/Azure.43edfdc4f668c89571c9865a915aac21.svg",
@@ -23,12 +25,12 @@
     "static/media/C.svg": "/Mein-Portfolio/static/media/C.4d943a0cb2aae0c439363d64b64f92e7.svg",
     "index.html": "/Mein-Portfolio/index.html",
     "static/media/CSS.svg": "/Mein-Portfolio/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "main.e3056b96.css.map": "/Mein-Portfolio/static/css/main.e3056b96.css.map",
-    "main.464e74f8.js.map": "/Mein-Portfolio/static/js/main.464e74f8.js.map",
+    "main.9e39fd4d.css.map": "/Mein-Portfolio/static/css/main.9e39fd4d.css.map",
+    "main.d069d8d4.js.map": "/Mein-Portfolio/static/js/main.d069d8d4.js.map",
     "453.17df7fe8.chunk.js.map": "/Mein-Portfolio/static/js/453.17df7fe8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3056b96.css",
-    "static/js/main.464e74f8.js"
+    "static/css/main.9e39fd4d.css",
+    "static/js/main.d069d8d4.js"
   ]
 }
