@@ -19,67 +19,63 @@ import './work.scss'
 const Work = ({ id, isWidthGreaterThan1050, language }) => {
 
     const [activeItem, setActiveItem] = useState(null);
-
-    // project pictures imports from public folder
-    const de_Chi_Quadrat_Verteilung = `${process.env.PUBLIC_URL}/img/de_Chi-Quadrat-Verteilung.svg`;
-
-    const PCA = `${process.env.PUBLIC_URL}/img/PCA.png`;
-    const PairPlot = `${process.env.PUBLIC_URL}/img/PairPlot.ppg`;
-    const Korrelationsmatrix_der_Merkmale = `${process.env.PUBLIC_URL}/img/Korrelationsmatrix der Merkmale.png`;
-
-    const Clustering = `${process.env.PUBLIC_URL}/img/Clustering.png`;
-
-    const VergeleichAktienvorhersage = `${process.env.PUBLIC_URL}/img/Vergleich Akteinkursvorhersage.png`;
-    
+   
     const workItems = [
         {
-            imgSrc: de_Chi_Quadrat_Verteilung,
+            imgSrc: Texts[language].work.projects.chi.imageSrc,
             title: Texts[language].work.projects.chi.title,
             description: Texts[language].work.projects.chi.description,
             features: Texts[language].work.projects.chi.features,
-            linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
-            languagesUsed: ['Python', 'Jest', 'Cucumber', 'Puppeteer', 'HTML', 'Sass', 'React', 'Google Calendar API', 'OAuth2', 'Recharts'],
-            //phonePic: [meet_phone, meet]
-            //languagesUsed: [Python, Jupyter],
-            phonePic: [de_Chi_Quadrat_Verteilung]
-
-
-            //imgSrc: meet,
-            //title: Texts[language].work.projects.meet.title,
-            //description: Texts[language].work.projects.meet.description,
-            
-            //linkGit: 'https://github.com/alinalein/meet',
-            //linkLive: 'https://alinalein.github.io/meet/',
-            // languagesUsed: [Reacticon, Jest, AWS, Cucumber],
-           
+            linkGit: Texts[language].work.projects.chi.linkGit,
+            languagesUsed: ['Python', 'Jupyter'],
+            phonePic: Texts[language].work.projects.chi.phonePic,
         },
         {
-            imgSrc: PCA,
+            imgSrc: Texts[language].work.projects.pca.imageSrc,
             title: Texts[language].work.projects.pca.title,
             description: Texts[language].work.projects.pca.description,
             features: Texts[language].work.projects.pca.features,
-            linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
-            languagesUsed: [Python, Jupyter],
-            phonePic: [Korrelationsmatrix_der_Merkmale, PCA]
+            linkGit: Texts[language].work.projects.pca.linkGit,
+            languagesUsed: ['Python', 'Jupyter'],
+            phonePic: Texts[language].work.projects.pca.phonePic,
         },
         {
-            imgSrc: Clustering,
+            imgSrc: Texts[language].work.projects.cluster.imageSrc,
             title: Texts[language].work.projects.cluster.title,
             description: Texts[language].work.projects.cluster.description,
             features: Texts[language].work.projects.cluster.features,
-            linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
-            languagesUsed: [Python, Jupyter],
-            phonePic: [Clustering]
+            linkGit: Texts[language].work.projects.cluster.linkGit,
+            languagesUsed: ['Python', 'Jupyter'],
+            phonePic: Texts[language].work.projects.cluster.phonePic,
         },
         {
-            imgSrc: VergeleichAktienvorhersage,
+            imgSrc: Texts[language].work.projects.aktien.imageSrc,
             title: Texts[language].work.projects.aktien.title,
             description: Texts[language].work.projects.aktien.description,
             features: Texts[language].work.projects.aktien.features,
-            linkGit: 'https://github.com/s-lein/Beispiele/blob/main/Gammastrahlung/Gammstrahlung.ipynb',
-            languagesUsed: [Python, Jupyter],
-            phonePic: [VergeleichAktienvorhersage]
+            linkGit: Texts[language].work.projects.aktien.linkGit,
+            languagesUsed: ['Python', 'Jupyter'],
+            phonePic: Texts[language].work.projects.aktien.phonePic,
         },
+        {
+            imgSrc: Texts[language].work.projects.statistics_R.imageSrc,
+            title: Texts[language].work.projects.statistics_R.title,
+            description: Texts[language].work.projects.statistics_R.description,
+            features: Texts[language].work.projects.statistics_R.features,
+            linkGit: Texts[language].work.projects.statistics_R.linkGit,
+            languagesUsed: ['R', 'Jupyter'],
+            phonePic: Texts[language].work.projects.statistics_R.phonePic,
+        },
+        {
+            imgSrc: Texts[language].work.projects.statistics_Tasks.imageSrc,
+            title: Texts[language].work.projects.statistics_Tasks.title,
+            description: Texts[language].work.projects.statistics_Tasks.description,
+            features: Texts[language].work.projects.statistics_Tasks.features,
+            linkGit: Texts[language].work.projects.statistics_Tasks.linkGit,
+            languagesUsed: ['Markdown', 'Jupyter'],
+            phonePic: Texts[language].work.projects.statistics_Tasks.phonePic,
+        },
+        
     ];
 
     const showDetails = (item) => {
