@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Mein-Portfolio/static/css/main.9e39fd4d.css",
-    "main.js": "/Mein-Portfolio/static/js/main.01ec11af.js",
+    "main.js": "/Mein-Portfolio/static/js/main.ec898b3a.js",
     "static/js/453.17df7fe8.chunk.js": "/Mein-Portfolio/static/js/453.17df7fe8.chunk.js",
-    "static/media/CV_de.pdf": "/Mein-Portfolio/static/media/CV_de.91609b25a80a81912c00.pdf",
-    "static/media/CV_en.pdf": "/Mein-Portfolio/static/media/CV_en.d55284045b88f38ab5cc.pdf",
+    "static/media/CV_en.pdf": "/Mein-Portfolio/static/media/CV_en.ccc6aaf2cfe6a3552158.pdf",
+    "static/media/CV_de.pdf": "/Mein-Portfolio/static/media/CV_de.0bd535eaabea05724706.pdf",
     "static/media/SVN.svg": "/Mein-Portfolio/static/media/SVN.bf08427ea2aec969cb8ac061043d9d72.svg",
     "static/media/Impressum_De.pdf": "/Mein-Portfolio/static/media/Impressum_De.5b819f53eb782d29fe24.pdf",
     "static/media/Impressum_En.pdf": "/Mein-Portfolio/static/media/Impressum_En.75dacf4e5d7a4eb9a9f6.pdf",
@@ -26,11 +26,11 @@
     "index.html": "/Mein-Portfolio/index.html",
     "static/media/CSS.svg": "/Mein-Portfolio/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "main.9e39fd4d.css.map": "/Mein-Portfolio/static/css/main.9e39fd4d.css.map",
-    "main.01ec11af.js.map": "/Mein-Portfolio/static/js/main.01ec11af.js.map",
+    "main.ec898b3a.js.map": "/Mein-Portfolio/static/js/main.ec898b3a.js.map",
     "453.17df7fe8.chunk.js.map": "/Mein-Portfolio/static/js/453.17df7fe8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e39fd4d.css",
-    "static/js/main.01ec11af.js"
+    "static/js/main.ec898b3a.js"
   ]
 }
